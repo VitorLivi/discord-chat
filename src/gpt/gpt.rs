@@ -18,7 +18,7 @@ impl Gpt {
                     .temperature(1.0)
                     .max_tokens(max_tokens)
                     .engine(ChatGPTEngine::Custom("chatgpt-4o-latest"))
-                    .timeout(Duration::from_secs(25))
+                    .timeout(Duration::from_secs(40))
                     .build()
                     .unwrap(),
             )
